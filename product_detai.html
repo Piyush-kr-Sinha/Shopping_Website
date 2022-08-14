@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-Detail | Shopeasy_With_RedStore|Ecommerce website design</title>
+    <link rel="stylesheet" href="tools/shopstyle.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="tools/logo.png" alt="logo" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart_page.html"><img src="tools/cart.png" alt="cart" width="30px" height="30px"></a>
+            <img src="tools/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+
+    </div>
+    <!-- -----------------SIngle Product Detail-------------------- -->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="tools/gallery-1.jpg" alt="gal-1" width="100%" id="productImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="tools/gallery-1.jpg" alt="gal-1" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="tools/gallery-2.jpg" alt="gal-2" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="tools/gallery-3.jpg" alt="gal-3" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="tools/gallery-4.jpg" alt="gal-4" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home / T-Shirt</p>
+                <h1>Red Printed T-Shirt by HRX</h1>
+                <h4>Rs-3500</h4>
+                <select>
+                    <option>Select Size </option>
+                    <option>XXL </option>
+                    <option>XL </option>
+                    <option>Large </option>
+                    <option>Medium </option>
+                    <option> Small</option>
+                </select>
+                <input type="number" value="1">
+                <a href="cart_page.html" class="btn">Add To Cart</a>
+                <h3>Product Detail</h3>
+                <br>
+                <p>Give your summer wardrobe a style upgrade with the HRX men's active T-shirt.For your morning workout or a denims for an evening out with the guys.</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- -----------title-------------------------- -->
+    <div class="small-container">
+        <div class="row row-2"></div>
+        <h2>Related Product</h2>
+        <br>
+        <br>
+        <p>View More</p>
+    </div>
+
+    <!-- ------------Other Product------------------------------------- -->
+    <div class="small-container">
+
+        <div class="row">
+            <div class="col-4">
+                <img src="tools/product-5.jpg" alt="prod5">
+                <h4>White Shoe</h4>
+                <p>Rs-7900/-</p>
+            </div>
+            <div class="col-4">
+                <img src="tools/product-2.jpg" alt="prod2">
+                <h4>Running Shoe</h4>
+                <p>Rs-4500/-</p>
+            </div>
+            <div class="col-4">
+                <img src="tools/product-3.jpg" alt="prod3">
+                <h4>Trouser</h4>
+                <p>Rs-2950/-</p>
+            </div>
+            <div class="col-4">
+                <img src="tools/product-4.jpg" alt="prod4">
+                <h4>Blue Printed T-Shirt</h4>
+                <p>Rs-2900/-</p>
+            </div>
+        </div>
+
+
+        <!-- ---------------- Footer ---------------------- -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download app for anoroid and ios mobile phone</p>
+                        <div class="app-logo">
+                            <img src="tools/play-store.png" alt="playstore">
+                            <img src="tools/app-store.png" alt="appstore">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="tools/logo-white.png" alt="" srcset="">
+                        <p>Our program is to suistainably make the pleasure and benefits of sports accesible to the many.
+                        </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Social Media</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright"> Copyright2022-Piyush Kumar Sinha</p>
+            </div>
+        </div>
+
+        <!-- ------------- Js for toggle menu--------------------- -->
+        <script>
+            var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px"
+
+            function menutoggle() {
+                if (MenuItems.style.maxHeight == "0px") {
+                    MenuItems.style.maxHeight = "200px";
+                } else {
+                    MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+        <!-- -----------------js for product gallery--------------- -->
+        <script>
+            var productImg = document.getElementById("productImg");
+            var smallImg = document.getElementsByClassName("small-img");
+            smallImg[0].onclick = function() {
+                productImg.src = smallImg[0].src;
+            }
+            smallImg[1].onclick = function() {
+                productImg.src = smallImg[1].src;
+            }
+            smallImg[2].onclick = function() {
+                productImg.src = smallImg[2].src;
+            }
+            smallImg[3].onclick = function() {
+                productImg.src = smallImg[3].src;
+            }
+        </script>
+</body>
+
+</html>
